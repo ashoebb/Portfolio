@@ -3,7 +3,7 @@ export const profile = {
   nickname: "Abdu",
   title: "DevOps & Cloud Engineer",
   tagline: "Building reliable infrastructure where it matters.",
-  location: "Indiana, USA",
+  location: "Remote",
   origin: "Egypt",
   email: "abdelrahmanshoeb4@gmail.com",
   github: "https://github.com/ashoebb",
@@ -14,7 +14,7 @@ export const profile = {
 
 export const about = {
   bio: [
-    "DevOps & Cloud Engineer based in Indiana, originally from Egypt.",
+    "DevOps & Cloud Engineer, originally from Egypt, working remotely.",
     "B.Sc. Computer Engineering from the Arab Academy for Science and Technology (2024).",
     "I design and operate AWS infrastructure, automate everything I can with Terraform and GitHub Actions, and ship software end-to-end when the product needs it.",
     "Currently pursuing the AWS Solutions Architect Associate (SAA-C03) certification.",
@@ -22,7 +22,7 @@ export const about = {
   facts: [
     { key: "name",         value: "Abdelrahman Shoeb (Abdu)" },
     { key: "role",         value: "DevOps & Cloud Engineer" },
-    { key: "location",     value: "Indiana, USA" },
+    { key: "location",     value: "Remote" },
     { key: "origin",       value: "Cairo, Egypt" },
     { key: "education",    value: "B.Sc. Computer Engineering, AAST (2024)" },
     { key: "certification",value: "AWS Solutions Architect Associate (in progress)" },
@@ -226,6 +226,6 @@ export const contact = {
     { label: "email",    value: profile.email,    href: `mailto:${profile.email}` },
     { label: "github",   value: "github.com/ashoebb",    href: profile.github },
     { label: "linkedin", value: "linkedin.com/in/abdelrahman-shoeb", href: profile.linkedin },
-    { label: "location", value: `${profile.location} · open to remote`, href: null },
+    { label: "location", value: profile.location, href: null },
   ],
 };

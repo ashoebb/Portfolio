@@ -49,11 +49,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     name: "Abdelrahman Shoeb",
     alternateName: "Abdu Shoeb",
     jobTitle: "DevOps & Cloud Engineer",
-    address: {
-      "@type": "PostalAddress",
-      addressRegion: "Indiana",
-      addressCountry: "US",
-    },
     email: "abdelrahmanshoeb4@gmail.com",
     url: "https://abdushoeb.dev",
     sameAs: [
