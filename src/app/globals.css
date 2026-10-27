@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0d0d0d;
+  --text: #e6e6e6;
+  --green: #28c840;
+  --yellow: #febc2e;
+  --red: #ff5f56;
+}
+
+html, body {
+  background: #000;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "calt" 1, "liga" 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-jetbrains), "JetBrains Mono", "Fira Code", "SF Mono", Menlo, monospace;
+  overflow-x: hidden;
+}
+
+/* Subtle CRT scanlines on the whole page (very faint) */
+.crt::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.02) 0px,
+    rgba(255, 255, 255, 0.02) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: overlay;
+}
+
+/* Vignette */
+.vignette::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,0.6) 100%);
+  pointer-events: none;
+  z-index: 9998;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #0d0d0d; }
+::-webkit-scrollbar-thumb {
+  background: #2b2b2b;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover { background: #28c840; }
+
+/* Cursor blink */
+.cursor::after {
+  content: "▋";
+  display: inline-block;
+  margin-left: 2px;
+  color: #28c840;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Glow text utility */
+.glow-green {
+  text-shadow: 0 0 8px rgba(40, 200, 64, 0.55);
+}
+
+/* Selection */
+::selection {
+  background: #28c840;
+  color: #000;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Terminal window subtle gradient title bar */
+.titlebar-grad {
+  background: linear-gradient(180deg, #2f2f2f 0%, #232323 100%);
+  border-bottom: 1px solid #1a1a1a;
+}
+
+/* Faint grid background */
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(40, 200, 64, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(40, 200, 64, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Skill bar inner glow */
+.skill-bar-fill {
+  background: linear-gradient(90deg, #28c840 0%, #56b6c2 100%);
+  box-shadow: 0 0 10px rgba(40, 200, 64, 0.4);
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
