@@ -49,7 +49,7 @@ export default function Hero() {
       <div data-anim>
         <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-terminal-text leading-tight tracking-tight">
           {profile.name}
-          <span className="text-terminal-green"> ({profile.nickname})</span>
+          {/* <span className="text-terminal-green"> ({profile.nickname})</span> */}
         </h1>
       </div>
 

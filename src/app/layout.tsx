@@ -9,7 +9,7 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://abdushoeb.dev"),
+  metadataBase: new URL("https://abdubuilds.vercel.app"),
   title: "Abdu Ibra — DevOps & Cloud Engineer",
   description:
     "Portfolio of Abdu Ibra, DevOps & Cloud Engineer in Cairo, Egypt (remote) specializing in AWS, Terraform, Kubernetes, and CI/CD.",
@@ -50,15 +50,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     alternateName: "Abdu Ibra",
     jobTitle: "DevOps & Cloud Engineer",
     email: "abduswedev@gmail.com",
-    url: "https://abdushoeb.dev",
+    url: "https://abdubuilds.vercel.app",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Cairo",
       addressCountry: "EG",
     },
     sameAs: [
-      "https://github.com/ashoebb",
-      "https://www.linkedin.com/in/abdelrahman-shoeb-ba4230218/",
+      "https://github.com/abdu",
+      "https://www.linkedin.com/in/abdu",
     ],
   };
 
