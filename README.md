@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/abdu/portfolio/main/public/terminal-preview.png" alt="Terminal Portfolio Preview" width="800"/>
+  <img src="https://raw.githubusercontent.com/ashoebb/Portfolio/main/public/terminal-preview.png" alt="Terminal Portfolio Preview" width="800"/>
 </p>
 
 <h1 align="center">⚡ <code>abdu@devops:~$ whoami</code></h1>
@@ -72,7 +72,7 @@ ci/cd:         GitHub Actions → Vercel Preview → Production
 
 ```bash
 # Clone
-git clone https://github.com/abdu/portfolio.git
+git clone https://github.com/ashoebb/Portfolio.git
 cd portfolio
 
 # Install deps
@@ -161,7 +161,7 @@ clear             # Clear screen
 
 ## 🌍 Deploy Your Own Fork
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fabdu%2Fportfolio)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fashoebb%2FPortfolio)
 
 1. Click the button above
 2. Connect your GitHub
@@ -176,8 +176,8 @@ clear             # Clear screen
 
 | Platform | Link |
 |----------|------|
-| 💼 **LinkedIn** | [linkedin.com/in/abdu](https://linkedin.com/in/abdu) |
-| 🐙 **GitHub** | [github.com/abdu](https://github.com/abdu) |
+| 💼 **LinkedIn** | [linkedin.com/in/abdelrahman-shoeb](https://www.linkedin.com/in/abdelrahman-shoeb-ba4230218/) |
+| 🐙 **GitHub** | [github.com/ashoebb](https://github.com/ashoebb/Portfolio) |
 | 📧 **Email** | [abduswedev@gmail.com](mailto:abduswedev@gmail.com) |
 | 🌐 **Portfolio** | [abdubuilds.vercel.app](https://abdubuilds.vercel.app) |
 
