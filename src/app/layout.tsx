@@ -57,7 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       addressCountry: "EG",
     },
     sameAs: [
-      "https://github.com/abdu",
+      "https://github.com/ashoebb",
       "https://www.linkedin.com/in/abdu",
     ],
   };

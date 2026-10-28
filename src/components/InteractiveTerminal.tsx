@@ -46,7 +46,7 @@ function cmdCat(arg?: string): string {
 }
 
 function cmdWhoami(): string {
-  return `${profile.name} (${profile.nickname}) — ${profile.title}\n${profile.location}`;
+  return `${profile.name} — ${profile.title}\n${profile.location}`;
 }
 
 function execute(input: string): { out: string; isErr?: boolean; clear?: boolean; exit?: boolean } {

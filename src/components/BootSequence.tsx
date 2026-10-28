@@ -11,7 +11,7 @@ const BOOT_LINES = [
   { text: "[    0.612001] dockerd: API listen on /var/run/docker.sock", delay: 80 },
   { text: "[    0.781004] kubelet: node abdu-prod is Ready", delay: 80 },
   { text: "[    0.882011] terraform: state lock acquired", delay: 70 },
-  { text: "[    0.991020] gha-runner: registered with github.com/abdu", delay: 60 },
+  { text: "[    0.991020] gha-runner: registered with github.com/ashoebb", delay: 60 },
   { text: "[    1.102004] prometheus: scraping 14 targets", delay: 60 },
   { text: "[    1.203100] ✔ all systems operational", delay: 90 },
 ];
@@ -89,7 +89,7 @@ export default function BootSequence({ onDone }: Props) {
         )}
         {showArt && (
           <div className="mt-4 text-terminal-text">
-            Welcome, {profile.nickname}.{" "}
+            Welcome, {profile.name}.{" "}
             <span className="cursor" />
           </div>
         )}

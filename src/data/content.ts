@@ -6,7 +6,7 @@ export const profile = {
   location: "Cairo, Egypt · Remote",
   origin: "Egypt",
   email: "abduswedev@gmail.com",
-  github: "https://github.com/abdu",
+  github: "https://github.com/ashoebb",
   linkedin: "https://www.linkedin.com/in/abdu",
   username: "abdu",
   host: "devops",
@@ -242,7 +242,7 @@ export const contact = {
   intro: "Open to DevOps, Cloud, and SRE roles (full-time or contract) and freelance engagements.",
   lines: [
     { label: "email",    value: profile.email,    href: `mailto:${profile.email}` },
-    { label: "github",   value: "github.com/abdu",    href: profile.github },
+    { label: "github",   value: "github.com/ashoebb",    href: profile.github },
     { label: "linkedin", value: "linkedin.com/in/abdu", href: profile.linkedin },
     { label: "location", value: profile.location, href: null },
     { label: "services", value: "AWS cost & deployment audit · CI/CD pipeline setup · Terraform/IaC baseline", href: null },
